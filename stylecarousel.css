@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Fontes/Montserrat-Regular.ttf);
+    
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0;
+ }
+
+.limite {
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+.imgLogo {
+    width: 160px;
+    height: 140px;
+    border-radius: 50%; 
+    margin-left: 50px;
+    box-shadow: none;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 200px;
+}
+
+nav li a {
+    color:rgb(255, 252, 252);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    text-decoration: underline 5px #EBC830;
+}
+
+.linhay {
+    background-color: #EBC830;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.img {
+    padding: 0 5px;
+    border-radius: 20%;
+    
+}
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+.galeria {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.galeria-wrapper {
+    overflow-x: auto;
+    
+    
+}
+
+.galeria-wrapper::-webkit-scrollbar {
+    display: none;
+}
+/* https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+
+.seta-prev, .seta-next {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 25px;
+    line-height: 250px;
+    color: whitesmoke;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: all 600ms ease-in-out;
+}
+
+.seta-next {
+    left: auto;
+    right: 0;
+    background: transparent;
+}
+
+.seta-prev:hover {
+    color: #EBC830;
+}
+
+.seta-next:hover {
+    color: #EBC830;
+}
+
+ul {
+    list-style: none;
+}
+
+.titulosHome {
+    display: flex;
+    align-items: center;
+}
+
+.borboleta {
+    width: 80px;
+    height: 80px;
+    margin: 5px 5px 0 30px;
+    box-shadow: none;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+.nossaHistoria {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 80px 0;
+}
+
+.covid {
+    width: 400px;
+    height: 250px;
+    margin: 0 8px 0 85px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.textoHistoria {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.textosHistInfinito {
+    font-size: 18px;
+    margin: 0 5px 0 85px;
+    text-align: justify;
+}
+
+.familiaplanta {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.insumos {
+    margin: 0 0 5px 150px;
+}
+
+.imgInsumos {
+    width: 250px;
+    height: 350px;
+    margin-right: 10px;
+    
+}
+
+.textoInsumos {
+    font-size: 18px;
+    margin: 0 5px 120px 85px;
+    text-align: justify;
+}
+
+.linhab {
+    background-color: black;
+    height: 10px;
+    width: 100%; 
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
